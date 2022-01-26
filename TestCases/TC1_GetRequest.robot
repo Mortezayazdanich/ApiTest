@@ -10,7 +10,7 @@ Library    REST
 ${base_url}=   https://gorest.co.in
 
 *** Test Cases ***
-GET Weather info
+GET Request Demo Test
     create session  mysession  ${base_url}
     ${response}=  GET On Session  mysession   /public/v1/posts/123/comments
 
