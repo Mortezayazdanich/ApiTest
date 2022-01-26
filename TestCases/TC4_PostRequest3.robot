@@ -11,7 +11,7 @@ ${baseurl}=  https://reqres.in/api
 ${Headers}=  {"Content-Type":"aplication/json",  "Accept":"aplication/json"}
 
 *** Test Cases ***
-PostTest
+Post Request of Register Demo Test
     Create Session    session1    ${baseurl}
     ${Body}  create dictionary  name=morpheus  job=leader  email=morpheus@gmail.com
     Set Headers    ${Headers}
@@ -42,7 +42,7 @@ PostTest
     Should Be Equal    ${idCountStr}  3
     Output   ID has ${idCountStr} Digits
 
-putRequest
+Put Request of Register Demo Test
     ${newBody}  create dictionary  name=david  email=david@gmail.com  job=leader
     Set Headers    ${Headers}
     ${response}  PUT On Session     session1  /users  json=${newBody}
