@@ -10,7 +10,7 @@ ${baseurl}=  https://reqres.in/api
 ${Headers}=  {"Content-Type":"aplication/json",  "Accept":"aplication/json"}
 
 *** Test Cases ***
-PostTest
+Post Request of Register with NO Password Demo Test 
     Create Session    session1    ${baseurl}
     ${Body}=  create dictionary  email=sydney@fife
     ${Header}=  create dictionary  Content-Type=aplication/json
