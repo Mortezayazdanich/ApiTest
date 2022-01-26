@@ -11,7 +11,7 @@ ${baseurl}=  https://reqres.in/api
 ${Headers}=  {"Content-Type":"aplication/json",  "Accept":"aplication/json"}
 
 *** Test Cases ***
-PostTest
+Post Request of Register Demo Test
     Create Session    session1    ${baseurl}
     ${Body}=  create dictionary  name=morpheus  job=leader
     Set Headers    ${Headers}
